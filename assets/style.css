@@ -1,0 +1,49 @@
+
+a {
+    color: #563d7c;
+    text-decoration: none;
+    transition: color 0.1s;
+  }
+  
+.choices button {
+ display:block !important;
+}
+
+input[type="text"] {
+  font-size: 100% !important;
+}
+
+ol  {
+    padding-left: 2px !important;
+    max-height: 400px !important;
+    overflow: auto !important;
+}
+li {
+    padding: 5px;
+    list-style: decimal inside none !important;
+}
+.hide {
+    display: none !important;
+}
+.start {
+    text-align: center !important;
+}
+.scores {
+    position:absolute !important;
+    top:10px !important;
+    left:10px !important;
+}
+.feedback {
+    border-top:2px !important;
+
+}
+
+.timer{
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+}
+.wrapper {
+    margin:100px auto 0 auto;
+    max-width: 600px;
+}
