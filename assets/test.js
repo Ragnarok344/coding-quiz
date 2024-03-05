@@ -46,3 +46,57 @@ function getQuestion() {
 
 
 }
+
+function questionClick(event){
+    var buttonEl = event.target;
+    if (!buttonEl.matches('.choice')) {
+        return;
+    }
+}
+
+if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+    time -= 15;
+    if (time < 0) {
+        time= 0;
+    }
+    timerEl.textContent = time;
+    sfxWrong.play();
+    feedbackEl.textContent = 'Wrong!';
+} else {
+    sfxRight.play();
+    feedbackEl.textContent = 'Correct!';
+}
+
+    feedbackEl.setAttribute('class', 'feedback');
+    setTimeout(function () {
+      feedbackEl.setAttribute('class', 'feedback hide');
+    }, 1000);
+
+    currentQuestionIndex++;
+
+    if (time <= 0 || currentQuestion === questions.length) {
+        quizEnd();
+    } else {
+        getQuestion();
+    }
+
+    function endQuiz() {
+        // clears timer
+        clearInterval(timerId);
+//shows final score to user
+        var endScreenEl = document.getElementById('end-screen');
+        finalScoreEl.textContent = time;
+//sets the questions back to hidden
+        questionsEl.setAttribute('class','hide');
+    }
+
+    function clockCount() {
+        // updates the timer
+        time--;
+        timerEl.textContent = time;
+
+        if (time <= 0) {
+            //checks for remaining time if time runs out closes quiz.
+            quizEnd();
+        }
+    }
