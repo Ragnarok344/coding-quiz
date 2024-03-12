@@ -1,7 +1,7 @@
 # coding-quiz
 
-![Coding Quiz Image](https://ibb.co/BHh8MkQ)
-![Website](https://ragnarok344.github.io/coding-quiz/)
+![ScreenShot](https://ibb.co/BHh8MkQ)
+[Website](https://ragnarok344.github.io/coding-quiz/)
 
 ## Table of Contents
 
