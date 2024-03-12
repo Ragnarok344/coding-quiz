@@ -1,6 +1,6 @@
 # coding-quiz
 ![code quiz](https://github.com/Ragnarok344/coding-quiz/assets/155500056/c9905a03-48f7-4557-a0a8-d2b758a97341)
-
+[website](https://ragnarok344.github.io/coding-quiz/)
 
 
 ## Table of Contents
