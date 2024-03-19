@@ -115,3 +115,11 @@ li {
     margin:100px auto 0 auto;
     max-width: 600px;
 }
+
+.feedback {
+  opacity: 1;
+}
+
+.feedback.hide {
+  opacity: 0;
+}

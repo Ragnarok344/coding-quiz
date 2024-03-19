@@ -11,19 +11,20 @@
 <body>
     <div class="scores">
       <a href="highscores.html"> Veiw HighScores</a>
+      <progress id="progressBar" value="0" max="100"></progress>
     </div>
     <div class ="time">Time: <span id ="time"></span></div>
 
     <div class="wrapper">
-        <div id="start-screen" class="start">
+        <div id="start" class="start">
             <h1>Coding Quiz</h1>
             <p>
                 Answer the following quiz questions within the time limit. Incorrect answers will penalize you by 15 seconds!
             </p>
             <button id="start" type="button" >Start Quiz</button>
         </div>
-        <div id="questions" class="hidden">
-            <h2 id ="question-title"></h2>
+        <div id="test" class="hidden">
+            <h2 id ="title"></h2>
             <div id ="choices" class="choices"></div>
         </div>
         <div id="end-screen" class="hide">
